@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Hello, AMPs</title>
-    <link rel="canonical" href="http://example.ampproject.org/article-metadata.html" />
+    <link rel="canonical" href="http://gwdev-zut2.wrlc.org/amp-page.html" />
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <script type="application/ld+json">
       {
@@ -17,10 +17,26 @@
       }
     </script>
     <style>body {opacity: 0}</style><noscript><style>body {opacity: 1}</style></noscript>
+    <style amp-custom>
+      /* any custom style goes here; and remember, body margin can not be declared */
+      body {
+        background-color: white;
+      }
+      #page-container { 
+        margin: 1em;
+        font-family: helvetica, arial, sans-serif; 
+      }
+      amp-img {
+        background-color: gray;
+      }
+    </style>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
   </head>
   <body>
+    <div id="page-container">
     <h1>AMP Project Test</h1>
     <p><a href="https://github.com/ampproject/amphtml/blob/master/docs/create_page.md">https://github.com/ampproject/amphtml/blob/master/docs/create_page.md</a></p>
+    <amp-img src="http://library.gwu.edu/sites/default/files/news-events/GW%20guys.png" alt="gw archive" height="214" width="211"></amp-img>
+    </div>
   </body>
 </html>
