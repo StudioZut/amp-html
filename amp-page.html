@@ -23,8 +23,12 @@
         background-color: white;
       }
       #page-container { 
-        margin: 1em;
+        margin: 1em auto;
+        padding: 1em;
         font-family: helvetica, arial, sans-serif; 
+        max-width: 1024px;
+        overflow: hidden;
+        text-overflow: ellipsis; 
       }
       amp-img {
         background-color: gray;
@@ -36,7 +40,7 @@
     <div id="page-container">
     <h1>AMP Project Test</h1>
     <p><a href="https://github.com/ampproject/amphtml/blob/master/docs/create_page.md">https://github.com/ampproject/amphtml/blob/master/docs/create_page.md</a></p>
-    <amp-img src="http://library.gwu.edu/sites/default/files/news-events/GW%20guys.png" alt="gw archive" height="214" width="211"></amp-img>
+    <amp-img src="http://library.gwu.edu/sites/default/files/news-events/GW%20guys.png" alt="gw archive" height="214" width="211" layout="responsive"></amp-img>
     </div>
   </body>
 </html>
